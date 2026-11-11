@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#EEF3F8">
+
+    <!-- Cabecera -->
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:background="@drawable/header_curve">
+
+        <ImageView
+            android:id="@+id/btnRegresar"
+            android:layout_width="44dp"
+            android:layout_height="44dp"
+            android:layout_marginStart="14dp"
+            android:layout_marginTop="30dp"
+            android:padding="10dp"
+            android:src="@drawable/ic_back" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal|bottom"
+            android:layout_marginBottom="36dp"
+            android:orientation="vertical"
+            android:gravity="center_horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="📜 Términos y Condiciones"
+                android:textColor="#FFFFFF"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Lee y firma antes de registrarte"
+                android:textColor="#48CAE4"
+                android:textSize="12sp" />
+        </LinearLayout>
+    </FrameLayout>
+
+    <!-- Contenido -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_marginTop="-24dp"
+        android:paddingHorizontal="16dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@drawable/card_login"
+            android:padding="20dp"
+            android:elevation="6dp"
+            android:layout_marginBottom="8dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="1. Aceptación de términos"
+                android:textColor="#2E86DE"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                android:layout_marginBottom="6dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Al registrarse en la aplicación Salud Total, el usuario acepta cumplir con los presentes términos y condiciones de uso, así como con la Política de Privacidad de la aplicación."
+                android:textColor="#6B8299"
+                android:textSize="13sp"
+                android:lineSpacingMultiplier="1.4"
+                android:layout_marginBottom="16dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="2. Protección de datos personales"
+                android:textColor="#2E86DE"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                android:layout_marginBottom="6dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="De conformidad con la Ley N.° 29733 — Ley de Protección de Datos Personales del Perú, sus datos personales serán tratados con confidencialidad y utilizados únicamente para la gestión de citas médicas. No serán compartidos con terceros sin su consentimiento."
+                android:textColor="#6B8299"
+                android:textSize="13sp"
+                android:lineSpacingMultiplier="1.4"
+                android:layout_marginBottom="16dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="3. Uso de la aplicación"
+                android:textColor="#2E86DE"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                android:layout_marginBottom="6dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="El usuario se compromete a:\n• Proporcionar información veraz y actualizada.\n• No compartir sus credenciales de acceso.\n• Cancelar las citas con al menos 1 hora de anticipación.\n• Respetar los horarios de atención del consultorio."
+                android:textColor="#6B8299"
+                android:textSize="13sp"
+                android:lineSpacingMultiplier="1.4"
+                android:layout_marginBottom="16dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="4. Responsabilidad"
+                android:textColor="#2E86DE"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                android:layout_marginBottom="6dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Salud Total no se responsabiliza por el uso indebido de la aplicación ni por la información proporcionada incorrectamente por el usuario."
+                android:textColor="#6B8299"
+                android:textSize="13sp"
+                android:lineSpacingMultiplier="1.4"
+                android:layout_marginBottom="16dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="5. Sostenibilidad (ODS 12)"
+                android:textColor="#2E86DE"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                android:layout_marginBottom="6dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Esta aplicación contribuye al ODS 12 (Producción y Consumo Responsables) mediante la eliminación del uso de papel en la gestión de citas médicas, promoviendo prácticas digitales sostenibles."
+                android:textColor="#6B8299"
+                android:textSize="13sp"
+                android:lineSpacingMultiplier="1.4" />
+        </LinearLayout>
+    </ScrollView>
+
+    <!-- Firma, checkbox y botón -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp"
+        android:background="#FFFFFF"
+        android:elevation="10dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_marginBottom="6dp">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="✍️ Firma con tu dedo en el recuadro"
+                android:textColor="#6B8299"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/tvLimpiarFirma"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Borrar firma"
+                android:textColor="#2E86DE"
+                android:textSize="12sp"
+                android:textStyle="bold"
+                android:padding="4dp" />
+        </LinearLayout>
+
+        <com.example.saludtotal.FirmaView
+            android:id="@+id/firmaView"
+            android:layout_width="match_parent"
+            android:layout_height="110dp"
+            android:background="@drawable/input_box"
+            android:layout_marginBottom="10dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_marginBottom="10dp">
+
+            <CheckBox
+                android:id="@+id/checkAceptar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:buttonTint="#2E86DE" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="He leído y acepto los Términos y Condiciones"
+                android:textColor="#0A1B2E"
+                android:textSize="13sp"
+                android:layout_marginStart="6dp" />
+        </LinearLayout>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnAceptar"
+            android:layout_width="match_parent"
+            android:layout_height="54dp"
+            android:background="@drawable/button_gradient"
+            android:text="Continuar con el registro"
+            android:textAllCaps="false"
+            android:textColor="#FFFFFF"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:enabled="false"
+            android:alpha="0.5" />
+    </LinearLayout>
+
+</LinearLayout>

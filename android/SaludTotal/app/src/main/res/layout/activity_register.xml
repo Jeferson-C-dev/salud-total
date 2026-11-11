@@ -1,0 +1,313 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#EEF3F8"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!-- Cabecera con degradado y curva -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="230dp"
+            android:background="@drawable/header_curve"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:paddingBottom="40dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="🩺"
+                android:textSize="40sp"
+                android:layout_marginBottom="6dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Crear cuenta"
+                android:textColor="#FFFFFF"
+                android:textSize="30sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Únete a Salud Total como paciente"
+                android:textColor="#48CAE4"
+                android:textSize="14sp"
+                android:layout_marginTop="2dp" />
+        </LinearLayout>
+
+        <!-- Tarjeta flotante -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@drawable/card_login"
+            android:layout_marginTop="-56dp"
+            android:layout_marginHorizontal="20dp"
+            android:padding="22dp"
+            android:elevation="10dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Tus datos"
+                android:textColor="#0A1B2E"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Completa el formulario para reservar tus citas"
+                android:textColor="#6B8299"
+                android:textSize="13sp"
+                android:layout_marginBottom="18dp" />
+
+            <!-- Nombre y apellido -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginBottom="14dp">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:layout_marginEnd="6dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="👤 Nombre"
+                        android:textColor="#6B8299"
+                        android:textSize="12sp"
+                        android:layout_marginBottom="6dp" />
+
+                    <EditText
+                        android:id="@+id/etNombre"
+                        android:layout_width="match_parent"
+                        android:layout_height="52dp"
+                        android:background="@drawable/input_box"
+                        android:hint="Juan"
+                        android:inputType="textPersonName|textCapWords"
+                        android:singleLine="true"
+                        android:paddingHorizontal="14dp"
+                        android:textColor="#0A1B2E"
+                        android:textColorHint="#A9BCCF"
+                        android:textSize="14sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:layout_marginStart="6dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Apellido"
+                        android:textColor="#6B8299"
+                        android:textSize="12sp"
+                        android:layout_marginBottom="6dp" />
+
+                    <EditText
+                        android:id="@+id/etApellido"
+                        android:layout_width="match_parent"
+                        android:layout_height="52dp"
+                        android:background="@drawable/input_box"
+                        android:hint="Pérez"
+                        android:inputType="textPersonName|textCapWords"
+                        android:singleLine="true"
+                        android:paddingHorizontal="14dp"
+                        android:textColor="#0A1B2E"
+                        android:textColorHint="#A9BCCF"
+                        android:textSize="14sp" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <!-- Correo -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="✉️ Correo electrónico"
+                android:textColor="#6B8299"
+                android:textSize="12sp"
+                android:layout_marginBottom="6dp" />
+
+            <EditText
+                android:id="@+id/etEmail"
+                android:layout_width="match_parent"
+                android:layout_height="52dp"
+                android:background="@drawable/input_box"
+                android:hint="correo@ejemplo.com"
+                android:inputType="textEmailAddress"
+                android:singleLine="true"
+                android:paddingHorizontal="14dp"
+                android:textColor="#0A1B2E"
+                android:textColorHint="#A9BCCF"
+                android:textSize="14sp"
+                android:layout_marginBottom="14dp" />
+
+            <!-- DNI y teléfono -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginBottom="14dp">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:layout_marginEnd="6dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="🪪 DNI"
+                        android:textColor="#6B8299"
+                        android:textSize="12sp"
+                        android:layout_marginBottom="6dp" />
+
+                    <EditText
+                        android:id="@+id/etDni"
+                        android:layout_width="match_parent"
+                        android:layout_height="52dp"
+                        android:background="@drawable/input_box"
+                        android:hint="8 dígitos"
+                        android:inputType="number"
+                        android:maxLength="8"
+                        android:singleLine="true"
+                        android:paddingHorizontal="14dp"
+                        android:textColor="#0A1B2E"
+                        android:textColorHint="#A9BCCF"
+                        android:textSize="14sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:layout_marginStart="6dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="📱 Teléfono"
+                        android:textColor="#6B8299"
+                        android:textSize="12sp"
+                        android:layout_marginBottom="6dp" />
+
+                    <EditText
+                        android:id="@+id/etTelefono"
+                        android:layout_width="match_parent"
+                        android:layout_height="52dp"
+                        android:background="@drawable/input_box"
+                        android:hint="9 dígitos"
+                        android:inputType="phone"
+                        android:maxLength="9"
+                        android:singleLine="true"
+                        android:paddingHorizontal="14dp"
+                        android:textColor="#0A1B2E"
+                        android:textColorHint="#A9BCCF"
+                        android:textSize="14sp" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <!-- Contraseña -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="🔒 Contraseña"
+                android:textColor="#6B8299"
+                android:textSize="12sp"
+                android:layout_marginBottom="6dp" />
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="6dp">
+
+                <EditText
+                    android:id="@+id/etPassword"
+                    android:layout_width="match_parent"
+                    android:layout_height="52dp"
+                    android:background="@drawable/input_box"
+                    android:hint="Mínimo 6 caracteres"
+                    android:inputType="textPassword"
+                    android:singleLine="true"
+                    android:paddingStart="14dp"
+                    android:paddingEnd="76dp"
+                    android:textColor="#0A1B2E"
+                    android:textColorHint="#A9BCCF"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/tvMostrar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="52dp"
+                    android:layout_gravity="end"
+                    android:gravity="center_vertical"
+                    android:text="Mostrar"
+                    android:textColor="#2E86DE"
+                    android:textSize="12sp"
+                    android:textStyle="bold"
+                    android:paddingHorizontal="14dp" />
+            </FrameLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Tu contraseña se guarda cifrada."
+                android:textColor="#A9BCCF"
+                android:textSize="11sp"
+                android:layout_marginBottom="22dp" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btnRegistrar"
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:background="@drawable/button_gradient"
+                android:text="Crear mi cuenta"
+                android:textAllCaps="false"
+                android:textColor="#FFFFFF"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:elevation="4dp" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tvVolver"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="¿Ya tienes cuenta? Inicia sesión"
+            android:textColor="#2E86DE"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            android:padding="20dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="🔐 Tus datos están protegidos · Ley N.° 29733"
+            android:textColor="#A9BCCF"
+            android:textSize="11sp"
+            android:gravity="center"
+            android:paddingBottom="24dp" />
+
+    </LinearLayout>
+</ScrollView>

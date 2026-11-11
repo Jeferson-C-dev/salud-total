@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#EEF3F8"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:background="#0A1B2E"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:paddingHorizontal="16dp">
+
+            <ImageView
+                android:id="@+id/btnRegresar"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/ic_back"
+                android:padding="8dp" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:layout_marginStart="8dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Agregar médico"
+                    android:textColor="#FFFFFF"
+                    android:textSize="22sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Registra un nuevo profesional"
+                    android:textColor="#A9BCCF"
+                    android:textSize="13sp" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@drawable/card_white"
+            android:layout_margin="16dp"
+            android:padding="20dp">
+
+            <EditText
+                android:id="@+id/etNombre"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/input_box"
+                android:hint="Nombre"
+                android:inputType="textPersonName"
+                android:paddingHorizontal="14dp"
+                android:textColor="#0A1B2E"
+                android:textColorHint="#A9BCCF"
+                android:textSize="14sp"
+                android:layout_marginBottom="12dp" />
+
+            <EditText
+                android:id="@+id/etApellido"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/input_box"
+                android:hint="Apellido"
+                android:inputType="textPersonName"
+                android:paddingHorizontal="14dp"
+                android:textColor="#0A1B2E"
+                android:textColorHint="#A9BCCF"
+                android:textSize="14sp"
+                android:layout_marginBottom="12dp" />
+
+            <EditText
+                android:id="@+id/etEmail"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/input_box"
+                android:hint="Correo electrónico"
+                android:inputType="textEmailAddress"
+                android:paddingHorizontal="14dp"
+                android:textColor="#0A1B2E"
+                android:textColorHint="#A9BCCF"
+                android:textSize="14sp"
+                android:layout_marginBottom="12dp" />
+
+            <EditText
+                android:id="@+id/etDni"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/input_box"
+                android:hint="DNI"
+                android:inputType="number"
+                android:maxLength="8"
+                android:paddingHorizontal="14dp"
+                android:textColor="#0A1B2E"
+                android:textColorHint="#A9BCCF"
+                android:textSize="14sp"
+                android:layout_marginBottom="12dp" />
+
+            <EditText
+                android:id="@+id/etTelefono"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/input_box"
+                android:hint="Teléfono"
+                android:inputType="phone"
+                android:maxLength="9"
+                android:paddingHorizontal="14dp"
+                android:textColor="#0A1B2E"
+                android:textColorHint="#A9BCCF"
+                android:textSize="14sp"
+                android:layout_marginBottom="12dp" />
+
+            <EditText
+                android:id="@+id/etColegiatura"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/input_box"
+                android:hint="Colegiatura (ej: CMP12360)"
+                android:inputType="textCapCharacters"
+                android:paddingHorizontal="14dp"
+                android:textColor="#0A1B2E"
+                android:textColorHint="#A9BCCF"
+                android:textSize="14sp"
+                android:layout_marginBottom="12dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Especialidad"
+                android:textColor="#6B8299"
+                android:textSize="13sp"
+                android:layout_marginBottom="6dp" />
+
+            <Spinner
+                android:id="@+id/spinnerEspecialidad"
+                android:layout_width="match_parent"
+                android:layout_height="52dp"
+                android:background="@drawable/input_box"
+                android:paddingHorizontal="12dp"
+                android:layout_marginBottom="12dp" />
+
+            <EditText
+                android:id="@+id/etPassword"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/input_box"
+                android:hint="Contraseña inicial (mín. 6)"
+                android:inputType="textPassword"
+                android:paddingHorizontal="14dp"
+                android:textColor="#0A1B2E"
+                android:textColorHint="#A9BCCF"
+                android:textSize="14sp"
+                android:layout_marginBottom="20dp" />
+
+            <Button
+                android:id="@+id/btnGuardar"
+                android:layout_width="match_parent"
+                android:layout_height="52dp"
+                android:background="@drawable/button_blue"
+                android:text="Registrar médico"
+                android:textColor="#FFFFFF"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>
